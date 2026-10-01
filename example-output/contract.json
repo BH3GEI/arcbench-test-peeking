@@ -1,0 +1,900 @@
+{
+  "level2": {
+    "test_flow_source": "/private/tmp/arcbench-test-peeking/_demo/workspace/tests",
+    "test_flow_clauses": [
+      {
+        "file": "REQ-1-1-1-sign-up.spec.ts",
+        "scenarios": [
+          "REQ-1-1-1: Register a New GitHub Account - Scenario 1",
+          "REQ-1-1-1: Register a New GitHub Account - Scenario 2",
+          "REQ-1-1-1: Register a New GitHub Account - Scenario 3"
+        ],
+        "navigations": [],
+        "role_lookups": [
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Create an account",
+            "exact": true
+          },
+          {
+            "role": "checkbox",
+            "name": "Agree to the terms",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create account",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "checkbox",
+            "name": "Agree to the terms",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create account",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create account",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Username already exists",
+          "Username format is invalid",
+          "Email format is invalid",
+          "Password requirements are not satisfied",
+          "Agree to terms is required"
+        ]
+      },
+      {
+        "file": "REQ-1-1-2-sign-in.spec.ts",
+        "scenarios": [
+          "REQ-1-1-2: Sign In with an Existing Account - Scenario 1",
+          "REQ-1-1-2: Sign In with an Existing Account - Scenario 2",
+          "REQ-1-1-2: Sign In with an Existing Account - Scenario 3",
+          "REQ-1-1-2: Sign In with an Existing Account - Scenario 4"
+        ],
+        "navigations": [],
+        "role_lookups": [
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          }
+        ],
+        "labels": [
+          "Username or email",
+          "Password",
+          "Username or email",
+          "Password",
+          "Username or email",
+          "Password",
+          "Username or email",
+          "Password"
+        ],
+        "text_assertions": [
+          "Invalid credentials",
+          "Invalid credentials",
+          "Invalid credentials"
+        ]
+      },
+      {
+        "file": "REQ-1-1-3-password-recovery.spec.ts",
+        "scenarios": [
+          "REQ-1-1-3: Recover Account Access Through a Verified Email - Scenario 1",
+          "REQ-1-1-3: Recover Account Access Through a Verified Email - Scenario 2",
+          "REQ-1-1-3: Recover Account Access Through a Verified Email - Scenario 3"
+        ],
+        "navigations": [],
+        "role_lookups": [
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Forgot password",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Send reset link",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Reset password",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Reset password",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          }
+        ],
+        "labels": [
+          "Email",
+          "New password",
+          "Verification code",
+          "Verification code",
+          "Verification code",
+          "New password",
+          "Confirm password",
+          "Username or email",
+          "Password",
+          "Verification code",
+          "New password",
+          "Confirm password",
+          "Username or email",
+          "Password"
+        ],
+        "text_assertions": [
+          "123456",
+          "Verification code is invalid",
+          "Password updated"
+        ]
+      },
+      {
+        "file": "REQ-1-2-sign-out.spec.ts",
+        "scenarios": [
+          "REQ-1-2: Sign Out and End the Current Web Session - Scenario 1",
+          "REQ-1-2: Sign Out and End the Current Web Session - Scenario 2"
+        ],
+        "navigations": [],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Confirm sign out",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Confirm sign out",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": []
+      },
+      {
+        "file": "REQ-1-3-change-password.spec.ts",
+        "scenarios": [
+          "REQ-1-3: Change Account Password - Scenario 1",
+          "REQ-1-3: Change Account Password - Scenario 2",
+          "REQ-1-3: Change Account Password - Scenario 3"
+        ],
+        "navigations": [],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Update password",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Update password",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Update password",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Sign in",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Sign in",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Password updated",
+          "Current password is incorrect",
+          "Current password is required"
+        ]
+      },
+      {
+        "file": "REQ-2-1-1-browse-organization-repositories.spec.ts",
+        "scenarios": [
+          "REQ-2-1-1: Browse Organization Repositories - Scenario 1",
+          "REQ-2-1-1: Browse Organization Repositories - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "link",
+            "name": "Repositories",
+            "exact": true
+          },
+          {
+            "role": "textbox",
+            "name": "Find a repository",
+            "exact": true
+          },
+          {
+            "role": "textbox",
+            "name": "Find a repository",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": []
+      },
+      {
+        "file": "REQ-2-1-2-create-organization.spec.ts",
+        "scenarios": [
+          "REQ-2-1-2: Create an Organization After Authentication - Scenario 1",
+          "REQ-2-1-2: Create an Organization After Authentication - Scenario 2",
+          "REQ-2-1-2: Create an Organization After Authentication - Scenario 3"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create organization",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create organization",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create organization",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Organization name already exists",
+          "Organization name format is invalid"
+        ]
+      },
+      {
+        "file": "REQ-2-2-1-create-team.spec.ts",
+        "scenarios": [
+          "REQ-2-2-1: Create an Organization Team - Scenario 1",
+          "REQ-2-2-1: Create an Organization Team - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create team",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Create team",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Team name is invalid"
+        ]
+      },
+      {
+        "file": "REQ-2-2-2-manage-team-membership.spec.ts",
+        "scenarios": [
+          "REQ-2-2-2: Manage Organization Team Members and Hierarchy - Scenario 1",
+          "REQ-2-2-2: Manage Organization Team Members and Hierarchy - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Members",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "textbox",
+            "name": "Username",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "combobox",
+            "name": "Parent team",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Save",
+            "exact": true
+          },
+          {
+            "role": "combobox",
+            "name": "Parent team",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Cyclic team hierarchy is not allowed"
+        ]
+      },
+      {
+        "file": "REQ-2-2-3-add-organization-member.spec.ts",
+        "scenarios": [
+          "REQ-2-2-3: Directly Add a User as an Organization Member - Scenario 1",
+          "REQ-2-2-3: Directly Add a User as an Organization Member - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "link",
+            "name": "People",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "combobox",
+            "name": "Role",
+            "exact": true
+          },
+          {
+            "role": "option",
+            "name": "Member",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Repositories",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add member",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Member",
+          "Pending invitation",
+          "Access denied",
+          "Account is already a member",
+          "Account not found"
+        ]
+      },
+      {
+        "file": "REQ-2-2-4-remove-organization-member.spec.ts",
+        "scenarios": [
+          "REQ-2-2-4: Remove a Member from an Organization - Scenario 1",
+          "REQ-2-2-4: Remove a Member from an Organization - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "People",
+            "exact": true
+          },
+          {
+            "role": "menuitem",
+            "name": "Remove from organization",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Remove",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Account menu",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "Your organizations",
+            "exact": true
+          },
+          {
+            "role": "link",
+            "name": "People",
+            "exact": true
+          },
+          {
+            "role": "menuitem",
+            "name": "Remove from organization",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": []
+      },
+      {
+        "file": "REQ-2-3-grant-repository-access.spec.ts",
+        "scenarios": [
+          "REQ-2-3: Grant Repository Access to People and Teams - Scenario 1",
+          "REQ-2-3: Grant Repository Access to People and Teams - Scenario 2"
+        ],
+        "navigations": [
+          "baseUrl("
+        ],
+        "role_lookups": [
+          {
+            "role": "button",
+            "name": "Add people or teams",
+            "exact": true
+          },
+          {
+            "role": "textbox",
+            "name": "Search",
+            "exact": true
+          },
+          {
+            "role": "combobox",
+            "name": "Role",
+            "exact": true
+          },
+          {
+            "role": "option",
+            "name": "Write",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Add",
+            "exact": true
+          },
+          {
+            "role": "combobox",
+            "name": "Role",
+            "exact": true
+          },
+          {
+            "role": "button",
+            "name": "Save",
+            "exact": true
+          }
+        ],
+        "labels": [],
+        "text_assertions": [
+          "Write"
+        ]
+      }
+    ],
+    "query_shapes": {
+      "helpers": [
+        "support/e2e.ts"
+      ],
+      "seeded_password": "Valid-password-123!",
+      "seeded_accounts": [
+        [
+          "LOGIN",
+          "alice-dev"
+        ],
+        [
+          "LOGIN_EMAIL",
+          "alice-dev"
+        ],
+        [
+          "SIGN_OUT",
+          "alice-dev"
+        ],
+        [
+          "PASSWORD_CHANGE_SUCCESS",
+          "password-change-success"
+        ],
+        [
+          "PASSWORD_CHANGE_INVALID_CURRENT",
+          "password-change-invalid"
+        ],
+        [
+          "PASSWORD_CHANGE_REQUIRED",
+          "password-change-required"
+        ],
+        [
+          "RECOVERY_VISIBILITY",
+          "recovery-visibility"
+        ],
+        [
+          "RECOVERY_INVALID_CODE",
+          "recovery-invalid-code"
+        ],
+        [
+          "RECOVERY_SUCCESS",
+          "recovery-success"
+        ],
+        [
+          "ORGANIZATION_OWNER",
+          "org-owner"
+        ],
+        [
+          "ORGANIZATION_NEW_MEMBER",
+          "new-member"
+        ],
+        [
+          "ORGANIZATION_EXISTING_MEMBER",
+          "existing-member"
+        ],
+        [
+          "ORGANIZATION_NON_OWNER",
+          "org-member"
+        ],
+        [
+          "TEAM_MAINTAINER",
+          "team-maintainer"
+        ],
+        [
+          "NON_ADMIN_COLLABORATOR",
+          "collaborator"
+        ],
+        [
+          "REPOSITORY_OWNER",
+          "repo-owner"
+        ],
+        [
+          "REPOSITORY_ADMIN",
+          "repo-admin"
+        ],
+        [
+          "VISIBILITY_ADMIN",
+          "visibility-admin"
+        ],
+        [
+          "FORK_USER",
+          "fork-user"
+        ],
+        [
+          "BRANCH_CONTRIBUTOR",
+          "branch-contributor"
+        ],
+        [
+          "DEFAULT_BRANCH_ADMIN",
+          "default-branch-admin"
+        ],
+        [
+          "DEFAULT_BRANCH_NON_ADMIN",
+          "default-branch-viewer"
+        ],
+        [
+          "FILE_CONTRIBUTOR",
+          "file-contributor"
+        ],
+        [
+          "ISSUE_AUTHOR",
+          "issue-author"
+        ],
+        [
+          "ISSUE_COMMENTER",
+          "issue-commenter"
+        ],
+        [
+          "ISSUE_EDITOR",
+          "issue-editor"
+        ],
+        [
+          "ISSUE_VIEWER",
+          "issue-viewer"
+        ],
+        [
+          "PROTECTION_ADMIN",
+          "protection-admin"
+        ],
+        [
+          "PROTECTION_NON_ADMIN",
+          "protection-viewer"
+        ],
+        [
+          "PR_AUTHOR",
+          "pr-author"
+        ],
+        [
+          "PR_CONTRIBUTOR",
+          "pr-contributor"
+        ],
+        [
+          "PR_MAINTAINER",
+          "pr-maintainer"
+        ],
+        [
+          "PR_REVIEWER",
+          "pr-reviewer"
+        ],
+        [
+          "PR_VIEWER",
+          "pr-viewer"
+        ],
+        [
+          "DRAFT_PR_AUTHOR",
+          "draft-author"
+        ]
+      ],
+      "exports": [
+        "seedAccount",
+        "seedValue",
+        "openVisibleOrganization",
+        "openVisibleRepository",
+        "clickVisibleTarget",
+        "visibleDialog",
+        "openVisibleTarget",
+        "baseUrl",
+        "openAccountAccess",
+        "signIn",
+        "uniqueAccount",
+        "openPasswordSettings"
+      ]
+    }
+  }
+}

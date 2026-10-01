@@ -1,0 +1,4 @@
+_demo/out/
+_demo/workspace/tests
+__pycache__/
+.DS_Store
