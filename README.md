@@ -27,7 +27,7 @@
 ## 手把手复现（5 分钟）
 
 ```bash
-git clone <本仓库地址>
+git clone https://github.com/BH3GEI/arcbench-test-peeking.git
 cd arcbench-test-peeking
 ./run.sh
 ```
