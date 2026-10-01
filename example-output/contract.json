@@ -52,7 +52,26 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Username",
+          "Email",
+          "Password",
+          "Confirm password",
+          "Username or email",
+          "Username or email",
+          "Password",
+          "Username",
+          "Email",
+          "Password",
+          "Confirm password",
+          "Username",
+          "Email",
+          "Username",
+          "Email",
+          "Password",
+          "Confirm password",
+          "Username"
+        ],
         "text_assertions": [
           "Username already exists",
           "Username format is invalid",
@@ -254,7 +273,9 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Username or email"
+        ],
         "text_assertions": []
       },
       {
@@ -312,7 +333,22 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Current password",
+          "New password",
+          "Confirm password",
+          "Username or email",
+          "Password",
+          "Current password",
+          "New password",
+          "Confirm password",
+          "Username or email",
+          "Password",
+          "New password",
+          "Confirm password",
+          "Username or email",
+          "Password"
+        ],
         "text_assertions": [
           "Password updated",
           "Current password is incorrect",
@@ -405,7 +441,13 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Organization name",
+          "Display name",
+          "Organization name",
+          "Organization name",
+          "Display name"
+        ],
         "text_assertions": [
           "Organization name already exists",
           "Organization name format is invalid"
@@ -452,7 +494,10 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Team name",
+          "Team name"
+        ],
         "text_assertions": [
           "Team name is invalid"
         ]
@@ -614,7 +659,11 @@
             "exact": true
           }
         ],
-        "labels": [],
+        "labels": [
+          "Username or email",
+          "Username or email",
+          "Username or email"
+        ],
         "text_assertions": [
           "Member",
           "Pending invitation",

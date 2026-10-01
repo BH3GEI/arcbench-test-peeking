@@ -37,7 +37,7 @@ def find_tests_dir() -> Path | None:
     return None
 
 ROLE_RE  = re.compile(r"getByRole\('(\w+)',\s*\{\s*name:\s*'([^']+)'(?:,\s*exact:\s*(true))?", re.S)
-LABEL_RE = re.compile(r"getByLabel\('([^']+)'\)")
+LABEL_RE = re.compile(r"getByLabel\('([^']+)'(?:,\s*\{[^}]*\})?\)")
 TEXT_RE  = re.compile(r"getByText\('([^']+)'(?:,\s*\{\s*exact:\s*(true))?", re.S)
 TEST_RE  = re.compile(r"test\('([^']+)'")
 GOTO_RE  = re.compile(r"page\.goto\(([^)]+)\)")
